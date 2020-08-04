@@ -78,7 +78,6 @@ if(!isset($_COOKIE['file_name'])) {
           'coabout'=> $_POST['coabout'],
           'address'=> $_POST['address'],
           'img'=> $_POST['img'],
-          'logo'=> $_POST['logo'],
           'width'=> $_POST['width'],
           'checkbox'=> $_POST['checkbox'],
           'height'=> $_POST['height'],

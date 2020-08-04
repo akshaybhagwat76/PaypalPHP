@@ -2,8 +2,6 @@ var min = 50; // the min amount;
 
 var app = angular.module('formApp', ['ngMessages']);
   app.factory('formData', function ($http) {
-    debugger
-
     return {
         get: function () {
             return $http.get(fileName);
@@ -16,7 +14,6 @@ var app = angular.module('formApp', ['ngMessages']);
     restrict: 'A',
     require: '?ngModel',
     link: function (scope, el, attrs, ngModel) {
-      debugger
       el.bind('change', function () {
         scope.$apply(function () {
           ngModel.$setViewValue(el.val());
@@ -26,8 +23,6 @@ var app = angular.module('formApp', ['ngMessages']);
   };
 });
 app.directive('input', [function() {
-  debugger
-
     return {
         restrict: 'E',
         require: '?ngModel',
@@ -49,7 +44,6 @@ app.directive('input', [function() {
     }
 }]);
 app.controller('formController', function ($scope, formData) {
-  debugger
     
     if(fileName){
       formData.get().then(function(res){
