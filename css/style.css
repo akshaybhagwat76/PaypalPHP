@@ -1,0 +1,28 @@
+html{
+	font-size: 16px;
+}
+
+#header *,
+#footer,
+#footer *,
+#sidebar_container *,
+#header :after,
+#header :before,
+#footer :after,
+#footer :before,
+#sidebar_container :after,
+#sidebar_container :before{
+	-webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+p,
+h5,
+h4{
+	margin: 0;
+}
+.loading{
+    display:none;
+    margin:140px auto;
+    
+}
